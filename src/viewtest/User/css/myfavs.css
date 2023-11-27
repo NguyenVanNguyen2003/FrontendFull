@@ -46,6 +46,15 @@
 }
 
 /* mytrips */
+
+.content-box-mytrips{
+    display: flex;
+    padding: 45px 30px 50px;
+    width: 100%;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
 .mytrips-mode{
     display: flex;
     padding: 20px;
@@ -62,6 +71,14 @@
 
 .active{
     border-bottom: 3px solid #5fcf86;
+}
+
+.myfavs-cars-table{
+    font-size: 1.5rem;
+}
+
+.myfavs-table-content{
+    padding: 10px;
 }
 
 /* myreward */
@@ -193,4 +210,41 @@
       .mytrips-mode-tab .mytrips-link{
         padding: 10px;
     }  
+}
+
+/* sua lai mycar */
+.owner-report--heading{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.myfavs-cars-content{
+    width: 90%;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    height: auto;
+    background-color: var(--white-color);
+}
+
+.owner-report-body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 20px;
+}
+
+.owner-report-body .money{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.summary-change{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.775rem;
+    background-color: #f6f6f6;
+    padding: 10px;
 }

@@ -20,3 +20,7 @@
 .userinfor__profile-account-bonus-main .userinfor__profile-detail-trip{
     display: none;
 }
+
+.active-link{
+    border-left: 4px solid var(--button-color);
+}

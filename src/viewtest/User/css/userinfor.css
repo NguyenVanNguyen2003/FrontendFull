@@ -236,7 +236,7 @@
 /* Phần header */
 .userinfor__papers {
     width: 100%;
-    height: 445px;
+    /* height: 445px; */
     background-color: var(--white-color);
     border-radius: 20px;
     padding: 30px;
@@ -316,6 +316,11 @@
     padding-left: 10px;
     font-size: 1.5rem;
     margin-bottom: 20px;
+    opacity: 1.5;
+}
+
+.active-userinfor{
+    opacity: 0.7;
 }
 /* Phần bên phải hình ảnh */
 .userinfor__papers-content-right {
@@ -328,27 +333,9 @@
     margin-bottom: 20px;
 }
 .userinfor__papers-content-right-img {
-    height: 100%;
-    padding: 20% 0;
-    border-radius: 20px;
-    text-align: center;
-    border: 2px dashed #e0e0e0;
+    display: contents;
 }
-.userinfor__papers-content-right-img-icon {
-    color: var(--button-color);
-    font-size: 2rem;
-}
-.userinfor__papers-content-right-img-icon:hover {
-    cursor: pointer;
-}
-.userinfor__papers-content-right-img-text:hover {
-    cursor: pointer;
-}
-.userinfor__papers-content-right-img-text {
-   font-size: 1.5rem;
-   margin-top: 10px;
-   opacity: 0.5;
-}
+
 .userinfor__bootom {
     width: 100%;
     height: 60px;
@@ -357,4 +344,19 @@
 
 .link-active{
     border-left: 4px var(--button-color) solid;
+}
+
+.update-papers{
+    display: flex;
+    gap: 10px;
+}
+.button-enable{
+    background-color: white;
+    border: solid 1px;
+    padding: 11px;
+    border-radius: 20px;
+}
+
+.userinfor__papers-content-right-img-fill{
+    padding: 10px;
 }

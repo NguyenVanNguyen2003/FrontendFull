@@ -40,7 +40,7 @@ function Navbarmobile() {
               <li onClick={() => handleItemClick("Xe của tôi")}>Xe của tôi</li>
             </Link>
             <Link to="/Mytrips" className='dropdown-list-link'>
-              <li onClick={() => handleItemClick("Chuyến đi của tôi")}>Chuyến đi của tôi</li>
+              <li onClick={() => handleItemClick("Chuyến đi của tôi")}>Ví của tôi</li>
             </Link>
             <Link to="/Myreward" className='dropdown-list-link'>
               <li onClick={() => handleItemClick("Quà tặng")}>Quà tặng</li>

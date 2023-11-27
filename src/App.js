@@ -29,6 +29,10 @@ import Mainhowto from './viewtest/Home/howtowork/Mainhowto';
 import Booking from './viewtest/Home/howtowork/Booking';
 import Paymenthowto from './viewtest/Home/howtowork/Paymenthowto';
 import Regu from './viewtest/Home/howtowork/Regu';
+// Địa điểm xe nổi bật
+import Mainlocation from './viewtest/Home/Location/Mainlocation';
+// Thanh toán
+import MainPayLive from './viewtest/Pay/MainPayLive';
 function App() {
   return (
     <>
@@ -61,6 +65,8 @@ function App() {
           <Route path='/book' element={<Booking/>} />
           <Route path='/paymen' element={<Paymenthowto/>} />
           <Route path='/regu' element={<Regu/>} />
+          <Route path='/location' element={<Mainlocation/>} />
+          <Route path='/paylive' element={<MainPayLive/>} />
         </Routes>
       </Router>
     </>

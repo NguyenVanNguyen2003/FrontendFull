@@ -615,10 +615,12 @@ function ContentProduct() {
                                     <span>1 225 000đ * 1ngày</span>
                                 </p>
                             </div>
+                            <Link to='/paylive'>
                             <button className='btn__large price-container-button'>
                                 <i><FaCircleCheck></FaCircleCheck></i>
                                 <h3>Chọn Thuê</h3>
                             </button>
+                            </Link>
 
                         </div>
                         <div className='surcharge'>

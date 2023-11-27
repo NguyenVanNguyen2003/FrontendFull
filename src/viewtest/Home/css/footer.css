@@ -185,7 +185,7 @@
 /* Mobile 0-769px */
 @media (max-width: 35.625em) {
     .footer__content {
-        width: 470px;
+        max-width: 470px;
         /* display: flex; */
         flex-wrap: wrap;
         padding: 0 20px;
@@ -278,7 +278,7 @@
     
     /* Phần tên cty + ngày cấp  */
     .footer__license{
-        width: 470px;
+        width: 100%;
         flex-direction: column;
         margin: 0 auto;
     }
@@ -925,7 +925,7 @@
 /* Mobile 0-769px */
 @media (max-width: 35.625em) {
     .footer__content {
-        width: 470px;
+        max-width: 470px;
         /* display: flex; */
         flex-wrap: wrap;
         padding: 0 20px;
@@ -1018,7 +1018,7 @@
     
     /* Phần tên cty + ngày cấp  */
     .footer__license{
-        width: 470px;
+        width: 100%;
         flex-direction: column;
         margin: 0 auto;
     }
