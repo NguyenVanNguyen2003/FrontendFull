@@ -13,7 +13,6 @@ const Login = () => {
   }
   
   function handleSubmit(e) {
-
     e.preventDefault();
     fetch("http://localhost:5000/login", {
       method: "POST",
@@ -30,12 +29,20 @@ const Login = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        if(data.accessToken) {
+        if (data.accessToken) {
           console.log(data, "userLogin");
-        window.localStorage.setItem("accessToken", data.accessToken);
-        window.location.href = "http://localhost:3000";
+  
+          window.localStorage.setItem("accessToken", data.accessToken);
+  
+          if (data.userId) {
+            window.localStorage.setItem("userId", data.userId);
+          }
+  
+          window.location.href = "http://localhost:3000";
         } else {
-          setLoginError("Đăng nhập không thành công. Vui lòng kiểm tra lại tài khoản")
+          setLoginError(
+            "Đăng nhập không thành công. Vui lòng kiểm tra lại tài khoản"
+          );
         }
       })
       .catch((error) => {
@@ -43,6 +50,7 @@ const Login = () => {
         setLoginError("Đã xảy ra lỗi khi đăng nhập. Vui lòng thử lại sau.");
       });
   }
+  
 
 
   return (

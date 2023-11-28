@@ -27,9 +27,8 @@ function ContentProduct() {
     }, [id]);
 
     if (!car) {
-        return <div>Loading...</div>; // Hiển thị khi đang tải dữ liệu
+        return <div>Dang tai...</div>;
     }
-    // ảnh xe chi tiết trên cùng
     const contactproduct__tablet = {
         dots: true,
         infinite: false,

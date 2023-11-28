@@ -13,7 +13,7 @@ function Header() {
   // hàm set tên từ đăng ký
   const [fullName, setFullName] = useState('');
   // hàm set ảnh từ đăng ký
-  const [imagePath, setImagePath] = useState(null);
+  const [avatar, setAvatar] = useState(null);
   // cái này ẩn hiển khi click vào chuông 
   const [isBell, setIsBell] = useState(true);
   // cái này ẩn hiển khi click vào mũi tên
@@ -40,16 +40,18 @@ function Header() {
         },
       })
         .then((response) => {
-          setImagePath(response.data.user.imagePath);
+          setAvatar(response.data.user.avatar);
           setFullName(response.data.user.fullName);
-          setIsLoggedIn(true); // Đánh dấu đã đăng nhập thành công
+          setIsLoggedIn(true);
         })
         .catch((error) => {
           console.error('Lỗi :', error);
         });
     }
   }, []);
- 
+//   if (!user) {
+//     return <div>Dang tai...</div>;
+// }
   
   return (
     <div className='header' id='header'>
@@ -77,7 +79,7 @@ function Header() {
         
         <div className='header__page-item-login-overlay'>
           <div className='header__page-item-login-overlay-avt'> 
-         <img src= {imagePath || defaultImage} alt="" />
+         <img src= {avatar || defaultImage} alt="" />
           <h3 className='header__page-item-login-overlay-avt-name'>
            Xin chào {fullName};
           </h3>
@@ -121,7 +123,7 @@ function Header() {
           </div>
           </span>
           <div className='header__page-item-login-avt'>
-          <img src={imagePath || defaultImage} alt=""></img>
+          <img src={avatar || defaultImage} alt=""></img>
           </div>
           <h3 className='header__page-item-login-name'>{fullName}</h3>
           <span onClick={togglearrowDisplay} className='header__page-item-login-arrow'>

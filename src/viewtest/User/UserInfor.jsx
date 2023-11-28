@@ -19,11 +19,11 @@ import Userinfornav from "./Userinfornav";
 
 function UserInfor() {
   const [fullName, setFullName] = useState('');
-  const [imagePath, setImagePath] = useState(null);
+  const [avatar, setAvatar] = useState(null);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
-  const [vip, setVip] = useState('');
-
+  const [Vip, setVip] = useState('');
+  const [birthDay, setBirthDay] = useState('');
 
   useEffect(() => {
     const accessToken = localStorage.getItem('accessToken');
@@ -35,11 +35,12 @@ function UserInfor() {
         },
       })
         .then((response) => {
-          setImagePath(response.data.user.imagePath);
+          setAvatar(response.data.user.avatar);
           setFullName(response.data.user.fullName);
           setPhoneNumber(response.data.user.phoneNumber);
           setEmail(response.data.user.email);
-          setVip(response.data.user.vip);
+          setVip(response.data.user.Vip);
+          setBirthDay(response.data.user.birthDay);
         })
         .catch((error) => {
           console.error('Lỗi :', error);
@@ -92,8 +93,8 @@ function UserInfor() {
               <div className="userinfor__profile-account">
                 <img
                   className="userinfor__profile-account-img"
-                  src={imagePath}
-                  alt=""
+                  src={avatar}
+                  alt={fullName}
                 ></img>
                 <h3 className="userinfor__profile-account-name">{fullName}</h3>
                 <p className="userinfor__profile-account-text">
@@ -117,7 +118,7 @@ function UserInfor() {
                         <FaMedal></FaMedal>
                       </i>
                       <h5 className="userinfor__profile-account-bonus-name">
-                        {vip}
+                        {Vip}
                       </h5>
                     </div>
                   </div>
@@ -131,7 +132,7 @@ function UserInfor() {
                     Ngày sinh
                   </h3>
                   <p className="userinfor__profile-detail-form-date-text">
-                    --/--/----
+                   {birthDay}
                   </p>
                 </div>
                 <div className="userinfor__profile-detail-form-sex">
@@ -147,7 +148,7 @@ function UserInfor() {
                     Số điện thoại{" "}
                   </h3>
                   <h2 className="userinfor__profile-detail-list-number-text">
-                    {phoneNumber}
+                    0{phoneNumber}
                   </h2>
                 </div>
                 <div className="userinfor__profile-detail-list-number">
@@ -163,7 +164,7 @@ function UserInfor() {
                     Facebook
                   </h3>
                   <h2 className="userinfor__profile-detail-list-number-text">
-                    Thêm liên kết
+                  Bảo trì
                   </h2>
                 </div>
                 <div className="userinfor__profile-detail-list-number">
@@ -171,7 +172,7 @@ function UserInfor() {
                     Google{" "}
                   </h3>
                   <h2 className="userinfor__profile-detail-list-number-text">
-                    {email}
+                    Bảo trì
                   </h2>
                 </div>
               </div>
