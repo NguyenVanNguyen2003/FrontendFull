@@ -55,36 +55,36 @@ function Location() {
         {
             id: 1,
             linkImg:
-                'https://n1-cstg.mioto.vn/1/cho_thue_xe_tu_lai_tphcm/hcm/p/m/cities_v2/HaNoi_v2.jpg',
+                'https://meeymap.com/tin-tuc/wp-content/uploads/2022/02/co-so-ha-tang-quan-lien-chieu.jpg',
             name: 'Liên Chiểu',
             text: '5+ xe'
         },
         {
             id: 2,
             linkImg:
-                'https://n1-cstg.mioto.vn/1/cho_thue_xe_tu_lai_tphcm/hcm/p/m/cities_v2/HaNoi_v2.jpg',
+                'https://file1.dangcongsan.vn/data/0/images/2022/07/26/giangntt/quang-canh-quan-thanh-khe.jpg',
             name: 'Thanh Khê',
             text: '15+ xe'
         },
         {
             id: 3,
             linkImg:
-                'https://n1-cstg.mioto.vn/1/cho_thue_xe_tu_lai_tphcm/hcm/p/m/cities_v2/HaNoi_v2.jpg',
+                'https://ik.imagekit.io/tvlk/blog/2022/09/ban-dao-son-tra-3-1024x550.jpg?tr=dpr-2,w-675',
             name: 'Sơn Trà',
             text: '10+ xe'
         },
         {
             id: 4,
             linkImg:
-                'https://n1-cstg.mioto.vn/1/cho_thue_xe_tu_lai_tphcm/hcm/p/m/cities_v2/HaNoi_v2.jpg',
+                'https://giabaohome.vn/wp-content/uploads/2021/05/ban-nha-trung-tam-da-nang-4.jpg',
             name: 'Hải Châu',
             text: '10+ xe'
         },
         {
             id: 5,
             linkImg:
-                'https://n1-cstg.mioto.vn/1/cho_thue_xe_tu_lai_tphcm/hcm/p/m/cities_v2/HaNoi_v2.jpg',
-            name: 'Hòa Khách',
+                'https://tapchimoitruong.vn/uploads/042021/image001_d8fd4ba3.png',
+            name: 'Hòa Khánh',
             text: '5+ xe'
         },
     ];
@@ -102,6 +102,9 @@ function Location() {
                                     }
                                     alt={item.title}
                                 />
+                            </div>
+                            <div className='location__slider-overwhite'>
+                                dvdv
                             </div>
                             <div className='location__slider-container-bottom'>
                                 <h3 className='location__slider-container-bottom-name'>
